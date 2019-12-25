@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `tblcategory`
 --
+CREATE DATABASE edusys;
+USE edusys;
 
 CREATE TABLE `tblcategory` (
   `ID_Cat` int(11) NOT NULL,
