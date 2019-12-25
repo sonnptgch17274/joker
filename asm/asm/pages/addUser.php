@@ -82,7 +82,6 @@ if(isset($_POST["submit"]))
 	$address = $_POST["address"];
 	$username = $_POST["username"];
 	$password = $_POST["password"];
-	$password = password_hash($password, PASSWORD_DEFAULT);
 	$id_role = $_POST["id_role"];
     if ($name ==""||$email ==""||$phone == ""||$address == ""||$username == ""|| $password == ""|| $id_role == "") 
     {

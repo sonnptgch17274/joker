@@ -9,9 +9,10 @@
 <body>
 <div id="container">
         <?php require_once("../blocks/header.php"); ?>
-        
+ 
 
         <?php require_once("../blocks/menu.php"); ?>
+        
         
         
 		<div id="content">

@@ -29,6 +29,12 @@ if(isset($_GET["idcourse"])){
 			
 }
 
+if(isset($_GET["idtopic"])){	
+    $id = $_GET["idtopic"];
+    $sql = "DELETE FROM tbltopic WHERE ID_Topic=" . $id;    
+    mysqli_query($connect,$sql);	
+			
+}
 
             
 ?>

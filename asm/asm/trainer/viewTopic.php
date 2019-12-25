@@ -24,6 +24,7 @@
         <div id="content_main">
 
 		<!-- require content here -->
+        <button><a href="http://localhost/ASM/asm/trainer/addTopic.php">Add New Topic</a></button>
 		<form action="" method="POST">
 		<table width="90%" border="1">
         <thead>
@@ -31,6 +32,8 @@
                 <th>Title</th>
                 <th>Description</th>
                 <th>Deadline</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
         </thead>  
             
@@ -50,7 +53,9 @@ $connect = mysqli_connect($hostname, $username, $password, $dbname);
         <tr>
             <th> <?= $rows[$i][1] ?> </th>
             <th> <?= $rows[$i][2] ?> </th>
-            <th> <?= $rows[$i][3] ?> </th>
+            <th> <?= $rows[$i][3] ?> </th> 
+            <th><a href="http://localhost/ASM/asm/trainer/updateTopic.php?id=<?= $rows[$i][0] ?>">Edit</a></th>
+            <th><a href="http://localhost/ASM/asm/function.php?idtopic=<?= $rows[$i][0] ?>" name="delete" onclick="myFunction()">Delete</a></th>
         </tr>
     </div>
 <?php }
@@ -61,5 +66,11 @@ $connect = mysqli_connect($hostname, $username, $password, $dbname);
 
 <p>&nbsp;</p>
         </div>
+
+    <script>
+    function myFunction(){
+        alert("Are you sure to delete?");
+    }
+    </script> 
 
 <?php require_once("../blocks/footer.php"); ?>

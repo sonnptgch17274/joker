@@ -12,5 +12,7 @@
 		<div id="header">
         	
             <a href="http://localhost/ASM/asm/trainee/index.php"><h1>CMS<span class="off"></span></h1></a>
+            <?php require_once("../logout_require.php"); ?>
             <h2>University of Greenwich</h2>
-        </div>   
+        </div> 
+           

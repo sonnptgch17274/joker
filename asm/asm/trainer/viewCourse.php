@@ -55,7 +55,7 @@
             <th> <?= $rows[$i][1] ?> </th>
             <th> <?= $rows[$i][2] ?> </th>
             <th><a href="http://localhost/ASM/asm/trainer/viewTopic.php?id=<?= $rows[$i][0] ?>">View</a></th>
-            <th><a href="http://localhost/ASM/asm/trainer/viewTopic.php?id=<?= $rows[$i][0] ?>">Edit</a></th>
+            <th><a href="http://localhost/ASM/asm/trainer/updateCourse.php?id=<?= $rows[$i][0] ?>">Edit</a></th>
             <th><a href="http://localhost/ASM/asm/function.php?idcourse=<?= $rows[$i][0] ?>" name="delete" onclick="myFunction()">Delete</a></th>
         </tr>
     </div>
