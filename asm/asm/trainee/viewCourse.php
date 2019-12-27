@@ -1,40 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../style.css" />
-
-</head>
-
-<body>
-<div id="container">
-        <?php require_once("../blocks/header1.php"); ?>
-    <br>
-    <br>
-    <br>
-        <?php require_once("../blocks/leftmenu.php"); ?>
-    
-
-        
-        
-		<div id="content">
-
-        
-
-        <div id="content_main">
-
-		<!-- require content here -->
-		<form action="" method="POST">
-		<table width="90%" border="1">
-            <thead>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Description</th>
-                    <th>Topic</th>
-                </tr>
-            </thead>        
-    
-    
+<?php require_once "../blocks/headerTrainee.php"; ?>
+       <!-- about_area_start -->
+       <div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+				<h2 data-aos="fade-left">LIST COURSE</h2>
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column2">Course Name</th>
+								<th class="column2">Description</th>
+                                <th class="column2">View</th>
+							</tr>
+						</thead>
+                               <!-- require php -->
     <?php
     require_once '../database.php';
     $connect = mysqli_connect($hostname, $username, $password, $dbname);
@@ -58,9 +37,13 @@
 ?>
 		</table>
 		</form>
-		
 
-<p>&nbsp;</p>
-        </div>
+ 
+                        </table>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<?php require_once("../blocks/footer.php"); ?>
+
+    <?php require_once "../blocks/footer.php"; ?>

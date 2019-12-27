@@ -25,7 +25,8 @@ if(isset($_GET["id"])){
 if(isset($_GET["idcourse"])){	
     $id = $_GET["idcourse"];
     $sql = "DELETE FROM tblcourse WHERE ID_Course=" . $id;    
-    mysqli_query($connect,$sql);	
+    mysqli_query($connect,$sql);
+    	
 			
 }
 

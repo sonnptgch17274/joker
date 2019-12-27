@@ -1,43 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../style.css" />
-
-</head>
-
-<body>
-<div id="container">
-        <?php require_once("../blocks/header1.php"); ?>
-    <br>
-    <br>
-    <br>
-        <?php require_once("../blocks/leftmenu1.php"); ?>
-    
-
-        
-        
-		<div id="content">
-
-        
-
-        <div id="content_main">
-
-		<!-- require content here -->
-        <button><a href="http://localhost/ASM/asm/trainer/addTopic.php">Add New Topic</a></button>
-		<form action="" method="POST">
-		<table width="90%" border="1">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Deadline</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </tr>
-        </thead>  
-            
-<?php
+<?php require_once "../blocks/headerTrainer.php"; ?>
+       <!-- about_area_start -->
+       <div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+				<h2 data-aos="fade-left">LIST TOPIC</h2>
+				<h3><a href="addTopic.php">Click to Add Topic</a></h3>
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column2">Title</th>
+								<th class="column2">Description</th>
+								<th class="column2">Deadline</th>
+                                <th class="column2">Edit</th>
+                                <th class="column2">Delete</th>
+							</tr>
+						</thead>
+                               <!-- require php -->
+                               <?php
 require_once '../database.php';
 $connect = mysqli_connect($hostname, $username, $password, $dbname);
 
@@ -64,13 +44,17 @@ $connect = mysqli_connect($hostname, $username, $password, $dbname);
 		</form>
 		
 
-<p>&nbsp;</p>
-        </div>
+
 
     <script>
     function myFunction(){
         alert("Are you sure to delete?");
     }
     </script> 
-
-<?php require_once("../blocks/footer.php"); ?>
+ 
+                        </table>
+				</div>
+			</div>
+		</div>
+	</div>
+    <?php require_once "../blocks/footer.php"; ?>

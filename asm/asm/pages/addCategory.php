@@ -1,27 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../style.css" />
- 
-</head>
+<?php require_once "../blocks/header.php"; ?>
+       <!-- about_area_start -->
+    <div class="limiter">
 
-<body>
-<div id="container">
-        <?php require_once("../blocks/header.php"); ?>
-        
-
-        <?php require_once("../blocks/menu.php"); ?>
-        
-        
-		<div id="content">
-        
-        
-
-
-		<!-- require content here -->
-		<h2>ADD CATEGORY</h2>
                     <form action="" method="POST">
+                    <h2>ADD CATEGORY</h2>
                     <table width="50%" border="0">
             <tr>
                 <td>ID</td>
@@ -34,13 +16,12 @@
             
 			<tr>
 				<td></td>
-				<td><input type="submit" name="submit3"></td>
+				<td><input type="submit" name="submit3" onclick="myFunction()"></td>
 			</tr>
 		</table>
 		</form>
 
-<p>&nbsp;</p>
-        </div>
+
 		<?php 
 
 require_once '../database.php';
@@ -57,12 +38,17 @@ if(isset($_POST["submit3"]))
     else{
         $sql = "INSERT INTO tblcategory VALUES ('$id', '$name')";
         mysqli_query($connect,$sql);
-        echo $sql;
-    }
-    if ($sql == true){
-        header("location: listCategory.php");
+
     }
 }
 ?>
 
-<?php require_once("../blocks/footer.php"); ?>
+</div>
+<?php require_once "../blocks/footer.php"; ?>
+
+
+      <script> 
+         function myFunction() { 
+           window.location.href="http://localhost/ASM/asm/pages/listCategory.php"; 
+         } 
+      </script>

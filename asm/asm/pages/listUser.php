@@ -1,44 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../style.css" />
-<link rel="stylesheet" type="text/css" href="../style1.css" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-
-<body>
-<div id="container">
-        <?php require_once("../blocks/header.php"); ?>       
-
-        <?php require_once("../blocks/menu.php"); ?>
-
-
-        
-        
-		<div id="content">
-        
-        
-  
-
-		<!-- require content here -->
-
-    <button><a href="http://localhost/ASM/asm/pages/addUser.php">Add New User</a></button>
-<table border="1px" class="w3-table-all">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Address</th>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Role</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-    <?php 
+<?php require_once "../blocks/header.php"; ?>
+       <!-- about_area_start -->
+       <div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+				<h2 data-aos="fade-left">LIST USER</h2>
+				<h3><a href="addUser.php">Click to Add User</a></h3>
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column2">Name</th>
+								<th class="column2">Email</th>
+								<th class="column2">Phone</th>
+								<th class="column2">Address</th>
+                                <th class="column2">Username</th>
+                                <th class="column2">Password</th>
+                                <th class="column2">Role</th>
+                                <th class="column2">Edit</th>
+                                <th class="column2">Delete</th>
+							</tr>
+						</thead>
+                        <?php 
     require_once '../database.php';
             $sql = "Select * from tbluser";
             $rows = query($sql);
@@ -61,17 +43,16 @@
                 </div>
         <?php 
             }
-    ?>
-</table>
-
-<p>&nbsp;</p>
-        </div>
-
-
-<?php require_once("../blocks/footer.php"); ?>
-
+    ?><!-- require php -->
+ 
+                        </table>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php require_once "../blocks/footer.php"; ?>
 <script>
     function myFunction(){
         alert("Are you sure to delete?");
     }
-</script>
+    </script> 

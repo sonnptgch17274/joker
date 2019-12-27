@@ -1,26 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../style.css" />
+<?php require_once "../blocks/headerTrainer.php"; ?>
+       <!-- about_area_start -->
+       <div class="limiter">
+		<div class="container-table100">
 
-</head>
-
-<body>
-<div id="container">
-        <?php require_once("../blocks/header.php"); ?>
-<br>
-<br>
-<br>
-        <?php require_once("../blocks/leftmenu1.php"); ?>
-        
-        
-		<div id="content">
-        
-
-		<!-- require content here -->
-		<h2>ADD NEW COURSE</h2>
 		<form action="" method="POST">
+        <h2>ADD NEW COURSE</h2>
 		<table width="50%" border="0">
 			<tr>
 				<td>Course Name</td>
@@ -44,8 +28,8 @@
 
     ?>
     <div>
-        <tr>
-            <th> 
+    
+
                 <select type="num" name="id_cat">
                     <?php
                     for($i=0; $i<count($rows); $i++)
@@ -55,8 +39,8 @@
                 } 
                 ?>
                 </select>
-            </th>
-        </tr>
+
+
     </div>
 					
 				</td>
@@ -98,5 +82,6 @@ if(isset($_POST["submit"]))
 
 
 ?>
-
-<?php require_once("../blocks/footer.php"); ?>
+		</div>
+	</div>
+    <?php require_once "../blocks/footer.php"; ?>
