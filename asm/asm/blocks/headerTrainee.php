@@ -67,9 +67,10 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="">
-
+                                        <li><a class="active" href="index.php">home</a></li>
+                                        <li><a href="#">Category <i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                        <li><a href="course_details.html">
                                         <?php  
                                         require_once '../database.php';
                                         $sql = "Select * from tblcategory";
@@ -81,7 +82,9 @@
                                         <?php 
                                         }
                                         ?>
-                                        </a></li>
+                                                    </a></li>
+                                                </ul>
+                                            </li>
                                     </ul>
                                 </nav>
                             </div>

@@ -4,8 +4,8 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
-				<h2 data-aos="fade-left">LIST TEACHER</h2>
-				<h3><a href="addteacher.php">Click to Add Account Teacher Or Student</a></h3>
+				<h2 data-aos="fade-left">LIST USER</h2>
+				 <h3><a href="addUser.php">Click to Add User</a></h3>
 					<table>
 						<thead>
 							<tr class="table100-head">

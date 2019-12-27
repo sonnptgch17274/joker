@@ -1,4 +1,4 @@
-<?php require_once "../blocks/header.php"; ?>
+<?php require_once "../blocks/headerTrainer.php"; ?>
 <!-- about_area_start -->
 <div class="limiter">
 <div class="container-table100">

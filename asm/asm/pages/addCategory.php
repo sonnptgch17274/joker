@@ -1,7 +1,7 @@
 <?php require_once "../blocks/header.php"; ?>
        <!-- about_area_start -->
     <div class="limiter">
-
+    <div class="container-table100">
                     <form action="" method="POST">
                     <h2>ADD CATEGORY</h2>
                     <table width="50%" border="0">

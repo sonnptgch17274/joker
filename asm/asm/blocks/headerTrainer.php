@@ -72,8 +72,9 @@
                                     <ul id="navigation">
                                         <li><a class="active" href="index.php">Home</a></li>
                                         <li><a href="http://localhost/ASM/asm/trainer/listUser.php">User</a></li>
-                                        <li><a href="">
-                                        
+                                        <li><a href="#">Category <i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                        <li><a href="course_details.html">
                                         <?php  
                                         require_once '../database.php';
                                         $sql = "Select * from tblcategory";
@@ -85,7 +86,10 @@
                                         <?php 
                                         }
                                         ?>
-                                        </a></li>
+                                                    </a></li>
+                                                </ul>
+                                            </li>
+
                                         
                                     </ul>
                                 </nav>

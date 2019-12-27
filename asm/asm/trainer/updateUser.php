@@ -51,8 +51,6 @@
                     <td>Role</td>
                     <td>
                         <select value="<?= $rows[$i][7] ?>" name="id_role" >
-                            <option value="Admin">Admin</option>
-                            <option value="Trainer">Trainer</option>
                             <option value="Trainee">Trainee</option>
                         </select>
                     </td>
