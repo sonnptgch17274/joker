@@ -9,7 +9,7 @@
  if(!isset($_SESSION['currAdmin'])){
 	header("location:index.php");
  } else{
- 	echo "<a href='http://localhost/ASM/asm/login.php'>Log out</a>";
+ 	echo "<a href='../login.php'>Log out</a>";
  }
 }
  ?>

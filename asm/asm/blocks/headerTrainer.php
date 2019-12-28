@@ -71,7 +71,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="index.php">Home</a></li>
-                                        <li><a href="http://localhost/ASM/asm/trainer/listUser.php">User</a></li>
+                                        <li><a href="../trainer/listUser.php">User</a></li>
                                         <li><a href="#">Category <i class="ti-angle-down"></i></a>
                                         <ul class="submenu">
                                         <li><a href="course_details.html">
@@ -82,7 +82,7 @@
                                         for($i=0; $i<count($rows); $i++)
                                         {
                                         ?>
-                                        <li><a href="http://localhost/ASM/asm/trainer/viewCourse.php?id=<?= $rows[$i][0] ?>"><?= $rows[$i][1] ?></a></li>
+                                        <li><a href="../trainer/viewCourse.php?id=<?= $rows[$i][0] ?>"><?= $rows[$i][1] ?></a></li>
                                         <?php 
                                         }
                                         ?>

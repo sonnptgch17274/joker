@@ -78,7 +78,7 @@
                                         for($i=0; $i<count($rows); $i++)
                                         {
                                         ?>
-                                        <li><a href="http://localhost/ASM/asm/trainee/viewCourse.php?id=<?= $rows[$i][0] ?>"><?= $rows[$i][1] ?></a></li>
+                                        <li><a href="../trainee/viewCourse.php?id=<?= $rows[$i][0] ?>"><?= $rows[$i][1] ?></a></li>
                                         <?php 
                                         }
                                         ?>

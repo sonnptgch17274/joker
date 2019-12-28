@@ -67,14 +67,14 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="adminstrator.php">Home</a></li>
-                                        <li><a href="http://localhost/ASM/asm/pages/listUser.php">User</a></li>
+                                        <li><a href="../pages/listUser.php">User</a></li>
                                         <!-- <li><a href="">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="course_details.html">course details</a></li>
                                                 <li><a href="elements.html">elements</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="http://localhost/ASM/asm/pages/listCategory.php">Category</a></li>
+                                        <li><a href="../pages/listCategory.php">Category</a></li>
                                         <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="blog.html">blog</a></li>
