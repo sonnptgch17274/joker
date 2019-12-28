@@ -9,7 +9,10 @@
  if(!isset($_SESSION['currAdmin'])){
 	header("location:index.php");
  } else{
- 	echo "<a href='../login.php'>Log out</a>";
+	
+	echo "<p style='color:Black; font-family: cursive, serif ; font-size:12pt; '>" ."Welcome! ". $_SESSION['currUser'] . "</p>";
+	//echo "<p style='color:red;'>" . $ip['countryName'] . "</p>";
+ 	echo "<a style='color:Black; font-family: cursive, serif ; font-size:13pt;text-decoration: underline;' href='../login.php'>Log out</a>";
  }
 }
  ?>
